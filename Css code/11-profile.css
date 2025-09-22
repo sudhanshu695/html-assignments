@@ -1,0 +1,31 @@
+body {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  background-color: #f2f2f2;
+}
+
+.portfolio {
+  max-width: 400px;
+  background-color: #fff;
+  padding: 20px;
+  margin: auto;
+  text-align: center;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+
+.portfolio img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-bottom: 15px;
+}
+
+.portfolio ul {
+  padding-left: 20px;
+  text-align: left;
+}
+
+.portfolio h1, .portfolio h2 {
+  margin: 10px 0;
+}
