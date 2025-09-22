@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="./practiceHeaderCss/01-header.css">
+    </head>
+    <body> 
+       <nav>
+        <ul class="sidebar">
+             <li onclick="hideSidebar()"><a href="#"><img src="./practiceHeaderCss/images/close_30dp_000000_FILL0_wght400_GRAD0_opsz24.svg" ></a></li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Service</a></li>
+            <li><a href="#">Login</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+        <ul>
+            <li><a href="#">Techxo</a></li>
+            <li class="hideOnMobile"><a href="https://open.spotify.com/">Home</a></li>
+            <li class="hideOnMobile"><a href="">Service</a></li>
+            <li class="hideOnMobile"><a href="">Login</a></li>
+            <li class="hideOnMobile"><a href="">About</a></li>
+            <li class="hideOnMobile"><a href="">Contact</a></li>
+            <li onclick=showSidebar()><a href="#"><img src="./practiceHeaderCss/images/menu_24dp_000000_FILL0_wght500_GRAD200_opsz40.png" ></a></li>
+        </ul>
+       </nav>
+
+       <script>
+
+          function showSidebar() {
+            const sidebar = document.querySelector('.sidebar');
+            sidebar.style.display = 'flex';
+          }
+
+
+         function hideSidebar () {
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display = 'none';
+         }
+ 
+       </script>
+    </body>
+</html>
