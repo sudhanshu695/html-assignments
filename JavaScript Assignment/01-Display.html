@@ -6,7 +6,7 @@
 </head>
 <body>
   <h1>JavaScript Assignment</h1>
-  <p>Open the browser console to see outputs (Right click → Inspect → Console).</p>
+  <p>Sir check the console </p>
 
   <script>
     // 1. Display 'Hello, World!' on the console
@@ -35,48 +35,6 @@
     let square = x * x;
     console.log("5) Square of", x, "is:", square);
 
-
-    // 6. Swap two numbers using a temporary variable
-    let p = 5, q = 10;
-    console.log(" Before swap: p =", p, ", q =", q);
-    let temp = p;
-    p = q;
-    q = temp;
-    console.log("   After swap: p =", p, ", q =", q);
-
-    // 7. Factorial of a number using a loop
-    let factNum = 5;
-    let factorial = 1;
-    for (let i = 1; i <= factNum; i++) {
-      factorial *= i;
-    }
-    console.log("7) Factorial of", factNum, "is:", factorial);
-
-    // 8. Multiplication table of a given number
-    let tableNum = 7;
-    console.log("8) Multiplication table of", tableNum);
-    for (let i = 1; i <= 10; i++) {
-      console.log(tableNum + " x " + i + " = " + (tableNum * i));
-    }
-
-    // 9. Reverse a number (e.g., 123 → 321)
-    let originalNum = 12345;
-    let reversedNum = 0;
-    let tempNum = originalNum;
-    while (tempNum > 0) {
-      let digit = tempNum % 10;
-      reversedNum = reversedNum * 10 + digit;
-      tempNum = Math.floor(tempNum / 10);
-    }
-    console.log("9) Reverse of", originalNum, "is:", reversedNum);
-
-    // 10. Check whether a year is a leap year or not
-    let year = 2024;
-    if ((year % 4 === 0 && year % 100 !== 0) || (year % 400 === 0)) {
-      console.log("10)", year, "is a Leap Year");
-    } else {
-      console.log("10)", year, "is NOT a Leap Year");
-    }
   </script>
 </body>
 </html>
