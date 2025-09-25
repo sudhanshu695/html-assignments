@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>JavaScript Assignment</title>
+</head>
+<body>
+  <h1>JavaScript Assignment</h1>
+  <p>Open the browser console to see outputs (Right click → Inspect → Console).</p>
+
+  <script>
+    // 1. Display 'Hello, World!' on the console
+    console.log("1) Hello, World!");
+
+    // 2. Add two numbers and display the result
+    let num1 = 10, num2 = 20;
+    let sum = num1 + num2;
+    console.log("2) Sum of", num1, "and", num2, "is:", sum);
+
+    // 3. Check whether a number is even or odd
+    let n = 7;
+    if (n % 2 === 0) {
+      console.log("3)", n, "is Even");
+    } else {
+      console.log("3)", n, "is Odd");
+    }
+
+    // 4. Find the largest of two numbers
+    let a = 15, b = 25;
+    let largest = (a > b) ? a : b;
+    console.log("4) Largest number between", a, "and", b, "is:", largest);
+
+    // 5. Calculate the square of a number
+    let x = 6;
+    let square = x * x;
+    console.log("5) Square of", x, "is:", square);
+
+
+    // 6. Swap two numbers using a temporary variable
+    let p = 5, q = 10;
+    console.log(" Before swap: p =", p, ", q =", q);
+    let temp = p;
+    p = q;
+    q = temp;
+    console.log("   After swap: p =", p, ", q =", q);
+
+    // 7. Factorial of a number using a loop
+    let factNum = 5;
+    let factorial = 1;
+    for (let i = 1; i <= factNum; i++) {
+      factorial *= i;
+    }
+    console.log("7) Factorial of", factNum, "is:", factorial);
+
+    // 8. Multiplication table of a given number
+    let tableNum = 7;
+    console.log("8) Multiplication table of", tableNum);
+    for (let i = 1; i <= 10; i++) {
+      console.log(tableNum + " x " + i + " = " + (tableNum * i));
+    }
+
+    // 9. Reverse a number (e.g., 123 → 321)
+    let originalNum = 12345;
+    let reversedNum = 0;
+    let tempNum = originalNum;
+    while (tempNum > 0) {
+      let digit = tempNum % 10;
+      reversedNum = reversedNum * 10 + digit;
+      tempNum = Math.floor(tempNum / 10);
+    }
+    console.log("9) Reverse of", originalNum, "is:", reversedNum);
+
+    // 10. Check whether a year is a leap year or not
+    let year = 2024;
+    if ((year % 4 === 0 && year % 100 !== 0) || (year % 400 === 0)) {
+      console.log("10)", year, "is a Leap Year");
+    } else {
+      console.log("10)", year, "is NOT a Leap Year");
+    }
+  </script>
+</body>
+</html>
