@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Simple API Fetch</title>
+</head>
+<body>
+  <h1>Users</h1>
+  <button onclick="quote(link)"">Click</button>
+  <div id="output">
+  </div>
+
+  <script>
+    const link = "https://motivational-spark-api.vercel.app/api/quotes"
+
+    
+    let i = 0;
+
+    async function quote(link) {
+
+      
+        const res = await fetch(link);
+        const data = await res.json();
+
+        // Access first quote
+        console.log(data[i].author);
+        console.log(data[i].quote);
+
+
+        
+        // Display on page
+        document.getElementById('output').innerHTML = `"${data[i].quote}"
+         — ${data[i].author}`;
+        
+         i++;
+         
+      } 
+    
+    // Call the function
+    // document.getElementById("myBtn").addEventListener("click", quote(link));
+  </script>
+</body>
+</html>
